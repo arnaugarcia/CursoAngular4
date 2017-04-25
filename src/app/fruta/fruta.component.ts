@@ -25,6 +25,18 @@ export class FrutaComponent {
  ngOnInit() {
    this.cambiarNombre(this.nombre);
    this.cambiarEdad(17);
+
+   // Variables y alcance
+
+   var uno = 8;
+   var dos = 15;
+
+   if (uno === 8) {
+     let uno = 3;
+     let dos = 88;
+     console.log('Dentro del IF ' + uno);
+   }
+   console.log('Fuera del IF ' + uno);
  }
   cambiarNombre(nombre) {
      this.nombre = 'Arnau2';
