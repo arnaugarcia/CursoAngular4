@@ -22,4 +22,12 @@ export class ContactoComponent {
       this.parametro = params['page'];
     });
   }
+
+  redirigir () {
+    this._router.navigate([ '/contacto' , 'arnaugarcia.com' ]);
+  }
+
+  redirigirDos () {
+      this._router.navigate([ 'home' ]);
+  }
 }
