@@ -17,7 +17,7 @@
 
 <div style="float: left">
 
-  <form #formCoche="ngForm" (ngSubmit)="onSubmit()" >
+  <form #formCoche="ngForm" (ngSubmit)="onSubmit(); formCoche.reset()" >
 
     <p>
     <label>Nombre</label>
