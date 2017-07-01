@@ -11,6 +11,10 @@ export class PlantillasComponent {
   public administrador: boolean;
   constructor() {
     this.titulo = 'Plantillas ngTemplate en Angular';
-    this.administrador = true;
+    this.administrador =  true;
+  }
+
+  cambiar(value: boolean) {
+    this.administrador = value;
   }
 }
